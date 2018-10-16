@@ -51,4 +51,4 @@ GROUP BY department_name;
 
 从时间上判断，查询语句1更优。
 自定义查询语句的sqldeveloper中截图：
-![图片1]()
+![](https://github.com/lwjbox/oracle/blob/master/one.png?raw=true)
