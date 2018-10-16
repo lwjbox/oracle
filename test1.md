@@ -51,8 +51,13 @@ GROUP BY department_name;
 
 从时间上判断，查询语句1更优。
 自定义查询语句的sqldeveloper中截图：
-![](https://github.com/lwjbox/oracle/blob/master/one.png?raw=true)
-![](https://github.com/lwjbox/oracle/blob/master/two.png?raw=true)
-![]()
+![截图1](https://github.com/lwjbox/oracle/blob/master/one.png?raw=true)
+
+
+![截图2](https://github.com/lwjbox/oracle/blob/master/two.png?raw=true)
+
+
+
+![截图3](https://github.com/lwjbox/oracle/blob/master/three.png?raw=true)
 
 
