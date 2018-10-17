@@ -46,10 +46,11 @@ GROUP BY department_name;
 
 ### 语句的执行结果：
 - 查询语句1用时0.026秒
-- 查询语句2用时0.024秒
+- 查询语句2用时0.037秒
 
 
-从时间上判断，查询语句2更优,两条语句SQL优化指导都没有给出建议。
+从时间上判断，查询语句1更优,两条语句SQL优化指导都没有给出建议。
+
 自定义查询语句的sqldeveloper中截图：
 ![截图1](https://github.com/lwjbox/oracle/blob/master/one.png?raw=true)
 
