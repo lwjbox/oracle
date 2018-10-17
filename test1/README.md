@@ -45,14 +45,14 @@ GROUP BY department_name;
 
 
 ### 语句的执行结果：
-- 查询语句1用时0.61秒
+- 查询语句1用时0.061秒
 - 查询语句2用时0.012秒
 
 
 从时间上判断，查询语句2更优,两条语句SQL优化指导都没有给出优化建议。
-![截图1](https://github.com/lwjbox/oracle/blob/master/test1/four.png?raw=true)
+![](https://github.com/lwjbox/oracle/blob/master/test1/four.PNG?raw=true)
 
-![截图1](https://github.com/lwjbox/oracle/blob/master/test1/five.png?raw=true)
+![](https://github.com/lwjbox/oracle/blob/master/test1/five.PNG?raw=true)
 
 自定义查询语句的sqldeveloper中截图：
 ![截图1](https://github.com/lwjbox/oracle/blob/master/test1/one.png?raw=true)
