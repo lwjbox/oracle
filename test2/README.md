@@ -34,3 +34,8 @@
 
 
 ![](https://github.com/lwjbox/oracle/blob/master/test2/five.png?raw=true)
+
+
+## 4、实验总结
+
+通过本实验的学习我能够创建新角色和新用户，并且能用新用户连接数据库、创建表，插入数据，创建视图，查询表和视图的数据。
