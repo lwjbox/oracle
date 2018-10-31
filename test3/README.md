@@ -28,7 +28,7 @@
 ![图1-3](https://github.com/lwjbox/oracle/blob/master/test3/1-3.png?raw=true) 
 </br></br></br></br></br>
 
-![图1-4](https://github.com/lwjbox/oracle/blob/master/test3/1-4.png?raw=true) 
+![图1-4](https://github.com/lwjbox/oracle/blob/master/test3/1-4.PNG?raw=true) 
 </br></br></br></br></br>
 
 查看表空间的数据文件：
