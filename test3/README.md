@@ -13,17 +13,17 @@
 - 进行分区与不分区的对比实验。
 ### 实验结果
 
-创建orders表：
+创建orders表的实验截图：
 
 ![图1-1](https://github.com/lwjbox/oracle/blob/master/test3/1-1.png?raw=true) 
 </br></br></br></br></br>
 
-创建order_details表：
+创建order_details表的实验截图：
 
 ![图1-2](https://github.com/lwjbox/oracle/blob/master/test3/1-2.png?raw=true) 
 </br></br></br></br></br>
 
-通过system给WANFENG分配权限：
+通过system给WANFENG分配权限的实验截图：
 
 ![图1-3](https://github.com/lwjbox/oracle/blob/master/test3/1-3.png?raw=true) 
 </br></br></br></br></br>
@@ -31,16 +31,16 @@
 ![图1-4](https://github.com/lwjbox/oracle/blob/master/test3/1-4.PNG?raw=true) 
 </br></br></br></br></br>
 
-查看表空间的数据文件：
+查看表空间的数据文件的实验截图：
 
 ![图1-5](https://github.com/lwjbox/oracle/blob/master/test3/1-5.png?raw=true) 
 </br></br></br></br></br>
 
-查看数据使用情况：
+查看数据使用情况的实验截图：
 
 ![图1-6](https://github.com/lwjbox/oracle/blob/master/test3/1-6.png?raw=true) 
-</br></br></br></br></br>
+</br></br></br>
 
-### 实验分析
-没有system分配的权限普通用户只能创建表，不能读写。必须有分配的权限才能进行表的读写，创建表之后会分配空间给表。
+### 实验总结
+Oracle的表分区功能通过改善可管理性、性能和可用性，从而为各式应用程序带来了极大的好处。没有分配权限普通用户只能创建表，读写会报错，所有创建表用要分配权限。
 
