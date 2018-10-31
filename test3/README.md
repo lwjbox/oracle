@@ -15,30 +15,30 @@
 
 创建orders表：
 
-![图1-1](https://github.com/TenThousandflower/Oracle/blob/master/test3/test3/img/1-1.png) 
+![图1-1](https://github.com/lwjbox/oracle/blob/master/test3/1-1.png?raw=true) 
 </br></br></br></br></br>
 
 创建order_details表：
 
-![图1-2](https://github.com/TenThousandflower/Oracle/blob/master/test3/test3/img/1-2.png) 
+![图1-2](https://github.com/lwjbox/oracle/blob/master/test3/1-2.png?raw=true) 
 </br></br></br></br></br>
 
 通过system给WANFENG分配权限：
 
-![图1-3](https://github.com/TenThousandflower/Oracle/blob/master/test3/test3/img/1-3.png) 
+![图1-3](https://github.com/lwjbox/oracle/blob/master/test3/1-3.png?raw=true) 
 </br></br></br></br></br>
 
-![图1-4](https://github.com/TenThousandflower/Oracle/blob/master/test3/test3/img/1-4.jpg) 
+![图1-4](https://github.com/lwjbox/oracle/blob/master/test3/1-4.png?raw=true) 
 </br></br></br></br></br>
 
 查看表空间的数据文件：
 
-![图1-5](https://github.com/TenThousandflower/Oracle/blob/master/test3/test3/img/1-5.png) 
+![图1-5](https://github.com/lwjbox/oracle/blob/master/test3/1-5.png?raw=true) 
 </br></br></br></br></br>
 
 查看数据使用情况：
 
-![图1-6](https://github.com/TenThousandflower/Oracle/blob/master/test3/test3/img/1-6.png) 
+![图1-6](https://github.com/lwjbox/oracle/blob/master/test3/1-6.png?raw=true) 
 </br></br></br></br></br>
 
 ### 实验分析
