@@ -133,12 +133,11 @@ begin
     ```
      4.查询订单详表，要求显示订单的客户名称和客户电话，产品类型用汉字描述。
          ```sql
-
     select CUSTOMER_NAME as "客户名称",CUSTOMER_TEL as "客户电话",PRODUCT_TYPE as "产品类型"
     from ORDERS o,PRODUCTS p,ORDER_DETAILS d
     where o.ORDER_ID=d.ORDER_ID 
     and d.PRODUCT_NAME=p.PRODUCT_NAME;
-    ```
+       ```
 
    
    5.查询出所有空订单，即没有订单详单的订单。
