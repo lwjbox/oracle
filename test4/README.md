@@ -133,7 +133,8 @@ begin
     where o.ORDER_ID=d.ORDER_ID 
     and d.PRODUCT_NAME=p.PRODUCT_NAME;
     ```
-      5.查询出所有空订单，即没有订单详单的订单。
+    
+     5.查询出所有空订单，即没有订单详单的订单。
     ```sql
      select distinct         ORDERS.ORDER_ID,ORDERS.CUSTOMER_NAME,
    ORDERS.CUSTOMER_TEL,ORDERS.ORDER_DATE,
