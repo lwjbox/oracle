@@ -8,7 +8,7 @@
 
 
 ### 3.实验过程：
-
+我的用户名为dasenlin
 - 新建部门表DEPARTMENTS，表空间：USERS
 
 ```sql
