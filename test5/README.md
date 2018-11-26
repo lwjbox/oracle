@@ -12,9 +12,16 @@
 - 本实验以实验四为基础
 ## 实验内容：
 1. 创建一个包(Package)，包名是MyPack。
-![图1-1](https://github.com/TenThousandflower/Oracle/blob/master/test5/img/1-1.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图1-1
+
+```sql
+create or replace PACKAGE MyPack IS
+  FUNCTION Get_SaleAmount(V_DEPARTMENT_ID NUMBER) RETURN NUMBER;
+  PROCEDURE Get_Employees(V_EMPLOYEE_ID NUMBER);
+END MyPack;
+```
+
 2. 在MyPack中创建一个函数SaleAmount ，查询部门表，统计每个部门的销售总金额，每个部门的销售额是由该部门的员工(ORDERS.EMPLOYEE_ID)完成的销售额之和。函数SaleAmount要求输入的参数是部门号，输出部门的销售金额。
-![图1-2](https://github.com/TenThousandflower/Oracle/blob/master/test5/img/1-2.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图1-2
+
 
 SaleAmount函数：
 ``` sql
@@ -84,3 +91,21 @@ BEGIN
   MYPACK.Get_Employees (  V_EMPLOYEE_ID => V_EMPLOYEE_ID) ;    
 END;
 ```
+
+
+- 由于订单只是按日期分区的，上述统计是全表搜索，因此统计速度会比较慢，如何提高统计的速度呢？
+
+  1）扩大数据表空间到500M，用于存放本系统的数据；
+  2）段盘区的初始大小为10K，增长大小为10K，增长幅度为1；
+  3）用户临时空间增大40M；
+  4）系统临时表空间和回滚段表空间增大40M，并且新建4个回滚段；
+  5）需要经常联结查询，而且数据量又大的库存表、名录表、收发料表放在一簇内；
+  6）提供定时备份，备份文件放在另外的机器上。
+    
+
+## 实验总结
+   通过本次试验熟悉了循环语句的使用方法；
+   学习了条件语句的使用方法，分支语句的使用方法；
+   了解了PL/SQL语言结构，变量和常量的声明和使用方法；
+   掌握了常用的PL/SQL函数，包，过程的用法。
+
